@@ -17,7 +17,7 @@ function App() {
       <Route path='/' exact element={<Body/>}/>
       <Route path='/community' exact element={<Community/>}/>
       <Route path='/blog' exact element={<Blog/>}/>
-      <Route path='/abouthousee' exact element={<Abouthousee/>}/>
+      <Route path='/about' exact element={<Abouthousee/>}/>
       
     </Routes>
    </BrowserRouter>

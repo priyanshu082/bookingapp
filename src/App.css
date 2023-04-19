@@ -42,19 +42,36 @@
 .btn {
   border: 0px solid rgba(35, 71, 217, 0.71);
   border-radius: 10px;
-  background-color: rgba(171, 215, 230, 0.758); 
+  background-color: rgb(222, 242, 239); 
   transition: box-shadow 300ms ease-out;
   font: normal lighter 17px/1 "proxima-nova";
   letter-spacing: 1px;
   color: black;
   padding: 8px;
+  font-weight: 300;
+
 }
 
 
 .btn:hover {
   box-shadow: 3px 3px 0px 0px rgb(17, 146, 216);
-  background-color:gainsboro;
-   transition: 500ms; 
+  background-color:rgb(218, 176, 113);
+   transition: 300ms; 
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
 }
 
 
