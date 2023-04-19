@@ -1,0 +1,20 @@
+ <stack>
+            {categories.map((category) => (
+              <button className='btn'>
+                
+              </button>
+    ))}
+        </stack>
+
+
+
+         {categories.map((category) => (
+              <button className='btn'
+              onClick={setSelectedCategory(category.name)}
+              style={{
+                background: category.name === selectedCategory && "#FFFFE0", color:"white", display:'flex'
+              }}
+              key={category.name}>
+              <span style={{ opacity: category.name === selectedCategory ? '1' : '0.8' }}>{category.name}</span>
+              </button>
+    ))}
