@@ -1,38 +1,24 @@
-import { Typography } from '@mui/material'
-import React, { useState } from 'react'
-// import { useState } from 'react'
-import Form from './LogInForm'
-import Bar from './Bar'
-import rightpik from "../rightpik.avif"
-import Register from './Register'
-import Intro from './Intro'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import icon from "../images/skip-button.png"
 
+ export const FirstPage = () => {
 
+    const Router= useNavigate()
 
-export const Login = () => {
-
-    // const [Login, setLogin] = useState(false)
-
-    // function login() {
-    //     setLogin(true)
-    // }
-
-    return (
-        <div className='form bg-gray-900  flex flex-row justify-between'>
-            <div class="border-r-2 border-orange-300 h-[560px] pr-4">
-                <Intro />
-                <div class="pl-[35px]">
-                    <Bar />
-                </div>
-            </div>
-
-            <div>
-                <img src={rightpik} alt="pik" class=" rightimg h-[560px] w-[530px] " />
-            </div>
-
+  return (
+    <div>
+        <button
+        class="btn-4 border rounded-[10px] p-[10px] mt-[300px] ml-[670px] "
+    onClick={()=>{
+      Router("/secondpage")
+    }}>
+        <div class="flex flex-row justify-between">
+            <h3>Enter</h3> <img src={icon} alt="" class="h-[15px] w-[15px] ml-[5px] pt-[3px]"/>
         </div>
-
-    )
+      
+    </button></div>
+  )
 }
 
-export default Login
+export default FirstPage

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Register from './Register'
 import Form from './LogInForm'
+import Right1 from './Right1'
 
 
 
@@ -26,7 +27,7 @@ export const Bar = () => {
   
 
   return (
-    <div>
+      <div>
       <div className='pt-6 flex justify-between w-[250px] pb-5'>
        <button className='btn-3'
         onClick={isLogin}
@@ -40,11 +41,11 @@ export const Bar = () => {
         </button>
         <span class="b"/>
       </div>
-      
-        {Sign && <Register/>} 
+      <div>
+         {Sign && <Register/>} 
         {Login && <Form/>} 
-
-
+      </div>
+    
     </div>
   )
 }
