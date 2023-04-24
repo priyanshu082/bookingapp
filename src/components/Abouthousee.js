@@ -1,8 +1,16 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 export const Abouthousee = () => {
   return (
-    <div>Abouthousee</div>
+    <div>
+       <div>
+                <Navbar />
+            </div>
+            <div>
+              Aabout hOuseee
+            </div>
+    </div>
   )
 }
 

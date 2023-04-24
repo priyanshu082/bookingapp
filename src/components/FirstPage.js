@@ -1,23 +1,40 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import icon from "../images/skip-button.png"
 
- export const FirstPage = () => {
 
-    const Router= useNavigate()
+export const FirstPage = () => {
+
+  const Router = useNavigate()
 
   return (
-    <div>
+    <div class="flex flex-row justify-center pt-[350px]">
+      <div class="mr-[20px]">
         <button
-        class="btn-4 border rounded-[10px] p-[10px] mt-[300px] ml-[670px] "
-    onClick={()=>{
-      Router("/secondpage")
-    }}>
-        <div class="flex flex-row justify-between">
-            <h3>Enter</h3> <img src={icon} alt="" class="h-[15px] w-[15px] ml-[5px] pt-[3px]"/>
-        </div>
-      
-    </button></div>
+          class="btn-3  ml-[53px] mt-[15px] font-poppins text-white py-[8px] px-[45px] text-lg"
+          onClick={() => {
+            Router("/loginpage")
+          }}>
+          <div>
+            LogIn 
+            {/* <img src={icon} alt="" class="h-[22px] w-[22px] ml-[5px] pt-[3px]" /> */}
+          </div>
+        </button>
+      </div>
+      <div>
+        <button
+          class="btn-3  ml-[53px] mt-[15px] font-poppins text-white py-[8px] px-[45px] text-lg"
+          onClick={() => {
+            Router("/signuppage")
+          }}>
+          <div class="flex flex-row justify-between">
+            SignUp 
+            {/* <img src={icon} alt="" class="h-[22px] w-[22px] ml-[5px] pt-[3px]" /> */}
+          </div>
+        </button>
+      </div>
+
+
+    </div>
   )
 }
 

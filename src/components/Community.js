@@ -1,9 +1,15 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 export const Community = () => {
   return (
     <div>
-    Community
+       <div>
+                <Navbar />
+            </div>
+            <div>
+              Community
+            </div>
     </div>
   )
 }

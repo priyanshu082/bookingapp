@@ -19,7 +19,7 @@ export const Navbar = () => {
                      <div>
                             <div class="flex flex-column justify-end pr-16 space-x-3 font-sans pt-2">
 
-                                   <Link href='/' underline="none" sx={{ color: "Black" }}>
+                                   <Link href='/secondpage' underline="none" sx={{ color: "Black" }}>
                                           <button className='btn'>Find HouSEE</button></Link>
                                    <Link href='/Community' underline="none" sx={{ color: "Black" }}>
                                           <button className='btn'>Community</button></Link>

@@ -1,26 +1,24 @@
 import './App.css';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import { Box } from "@mui/material";
-import Navbar from "./components/Navbar";
 import Community from "./components/Community"
 import Blog from "./components/Blog"
 import Abouthousee from"./components/Abouthousee"
-import SecondPage from './components/SecondPage';
+import LoginPage from './components/LoginPage';
 import FirstPage from './components/FirstPage';
 import DashBoard from './components/DashBoard';
+import SignupPage from './components/SignupPage';
 
 
 function App() {
   return (
 
-    <div class="main-page h-[850px]">
-      <Box>
-      <Navbar/>
-    </Box>
+    <div class="main-page h-[900px]">
+      
       <BrowserRouter>
     <Routes>
       <Route path='/' exact element={<FirstPage/>}/>
-      <Route path='/secondpage' exact element={<SecondPage/>}/>
+      <Route path='/loginpage' exact element={<LoginPage/>}/>
+      <Route path='/signuppage' exact element={<SignupPage/>}/>
       <Route path='dashboard' exact element={<DashBoard/>}/>
       <Route path='/community' exact element={<Community/>}/>
       <Route path='/blog' exact element={<Blog/>}/>
