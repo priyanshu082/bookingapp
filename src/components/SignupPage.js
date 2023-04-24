@@ -10,9 +10,9 @@ const SignupPage = () => {
             <div className=' form bg-white flex flex-row-reverse justify-between'>
                 <div>
                     <Intro />
-                    <div class="mt-[70px]">
-                        <section class="flex justify-center mb-[20px] pr-[30px] text-2xl font-poppins font-medium text-blue-800">
-                            Login to your Account
+                    <div class="mt-[50px]">
+                        <section class="flex justify-center mb-[10px] pr-[10px] text-2xl font-poppins font-medium text-blue-800">
+                            SignUp For New Account
                         </section>
                         <div>
                             <Register />
