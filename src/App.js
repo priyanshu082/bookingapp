@@ -12,8 +12,7 @@ import SignupPage from './components/SignupPage';
 function App() {
   return (
 
-    <div class="main-page h-[900px]">
-      
+    <div class="">
       <BrowserRouter>
     <Routes>
       <Route path='/' exact element={<FirstPage/>}/>

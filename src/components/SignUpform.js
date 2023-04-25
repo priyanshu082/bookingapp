@@ -1,10 +1,12 @@
-import { Box } from '@mui/material'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
+import { useNavigate } from 'react-router-dom'
 
 export const Register = () => {
+
+  const Router=useNavigate()
 
   const schema = yup.object().shape({
     email: yup.string().email().required("Please Enter Your Gamil"),
@@ -60,7 +62,10 @@ export const Register = () => {
 
       </form>
       <div>
-        <button class="text-blue-900 mt-[25px] text-sm font-poppins ml-[44px] hover:cursor-pointer hover:underline font-medium"> Already have a Account? </button>
+        <button class="text-blue-900 mt-[25px] text-sm font-poppins ml-[44px] hover:cursor-pointer hover:underline font-medium"
+        onClick={()=>{
+          Router("/loginpage")
+        }}> Already have a Account? </button>
       </div>
 
       

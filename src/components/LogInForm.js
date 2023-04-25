@@ -1,11 +1,13 @@
 import React from 'react'
-// import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
-import { Box } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
+
 
 export const Form = () => {
+
+    const Router=useNavigate()
 
     const schema = yup.object().shape({
         Gmail: yup.string().email().required("Enter your Username"),
@@ -48,7 +50,10 @@ export const Form = () => {
 
             </form>
             <div>
-                <button class="text-blue-900 mt-[25px] text-sm font-poppins ml-[72px] hover:cursor-pointer hover:underline font-medium"> Create Account </button>
+                <button class="text-blue-900 mt-[25px] text-sm font-poppins ml-[72px] hover:cursor-pointer hover:underline font-medium"
+                onClick={()=>{
+                    Router("/signuppage")
+                }}> Create Account </button>
             </div>
 
             <div>

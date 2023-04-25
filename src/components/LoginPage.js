@@ -9,7 +9,7 @@ export const LoginPage = () => {
 
 
     return (
-        <div class="pt-[110px]">
+        <div class="pt-[110px] ">
             <div className=' form bg-white flex flex-row-reverse justify-between'>
                 <div>
                     <Intro />
