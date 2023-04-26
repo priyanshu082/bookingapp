@@ -4,6 +4,8 @@ import logo from "../logo.png"
 import SearchIcon from "../images/icons8-search (1).svg"
 import side from "../images/user-3296.svg"
 import side2 from "../images/three-horizontal-lines-icon.svg"
+import world from "../images/earth-globe.png"
+import Popup from './Popup'
 
 
 
@@ -22,7 +24,8 @@ export const Navbar = () => {
                                    </div>
                             </Link>
 
-                            <div class="border-[1px] rounded-r-[30px] rounded-l-[30px] pt-[10px] pl-[16px] pr-[8px] pb-[4px] mr-[100px] border-gray-300 font-poppins shadow-md hover:shadow-lg transition-shadow ">
+                            <div class="border-[1px] rounded-r-[30px] rounded-l-[30px] pt-[8px] pl-[16px] pr-[8px] border-gray-300 font-poppins shadow-md hover:shadow-lg transition-shadow flex flex-row">
+
                                    <div class="flex font-poppins  space-x-3 justify-center">
                                           <div>
                                                  <button className='text-sm font-bold'>Anywhere</button>
@@ -40,21 +43,31 @@ export const Navbar = () => {
                                           </div>
                                    </div>
                             </div>
-                            
-                                   <button class="border-[1px] rounded-l-[35px] rounded-r-[35px] border-gray-200 mr-[50px] px-[6px] shadow-sm hover:shadow-xl transition-shadow"
-                                          onClick={() => {
-                                                 setToggle((prev) => !prev)
-                                          }}>
-                                          <div className='flex flex-row'>
-                                                 <img src={side2} class="h-[12px] w-[14px] mt-[10px] mr-[20px] ml-[10px]" />
-                                                 <img src={side} class="h-[30px] w-[30px]  " />
-                                          </div>
-                                          <div>
 
-                                          </div>
-                                   </button>
+                            <div class="flex flex-row">
+                                   <div >
+                                          <button class="mt-[12px] mr-[20px] shadow-xl">
+                                                 <img src={world} class="h-[20px] w-[20px]" />
+                                          </button>
+                                   </div>
+
+                                   <div>
+                                          <button class="border-[1px] rounded-l-[35px] rounded-r-[35px] border-gray-300 mr-[50px] p-[6px] shadow-sm hover:shadow-xl transition-shadow"
+                                                 onClick={() => {
+                                                        setToggle((prev) => !prev)
+                                                 }}>
+                                                 <div className='flex flex-row'>
+                                                        <img src={side2} class="h-[12px] w-[14px] mt-[9px] mr-[15px] ml-[10px]" />
+                                                        <img src={side} class="h-[30px] w-[30px]  " />
+                                                 </div>
+                                          </button>
+                                   </div>
+                            </div>
+                             <Popup
+                       Toggle={Toggle}
+                       setToggle={setToggle}/>
                      </div>
-
+                     
               </div>
 
        )

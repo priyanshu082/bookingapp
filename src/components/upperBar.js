@@ -2,7 +2,6 @@ import React from 'react'
 import Categories from '../utils/Constants'
 import { useState } from 'react'
 
-
 export const UpperBar = () => {
 
     const [selectedCategory, setSelectedCategory] = useState("Amazing pools")

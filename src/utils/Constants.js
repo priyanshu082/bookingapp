@@ -11,6 +11,14 @@ import HouseOutlinedIcon from '@mui/icons-material/HouseOutlined'; //for design
 import CastleOutlinedIcon from '@mui/icons-material/CastleOutlined'; //for castle
 
 
+export const PopItems =[
+    {name:"LogIn"},
+    {name:"SignUp"},
+    {name:"Community"},
+    {name:"About HouSEE"},
+    {name:"Help"},
+]
+
 
 
 export const Categories = [
