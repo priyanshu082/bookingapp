@@ -39,7 +39,7 @@ export const Navbar = () => {
                                                  <input
                                                         placeholder='Add guests'
                                                         class=" placeholder:font-poppins w-[100px] h-[25px] focus:outline-none placeholder:text-sm" />
-                                                 <img src={SearchIcon} class="rounded-3xl h-[28px] w-[28px] " />
+                                                 <img src={SearchIcon} class="rounded-3xl h-[28px] w-[28px] "/> 
                                           </div>
                                    </div>
                             </div>

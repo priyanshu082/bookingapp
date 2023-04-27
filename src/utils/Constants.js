@@ -11,13 +11,7 @@ import HouseOutlinedIcon from '@mui/icons-material/HouseOutlined'; //for design
 import CastleOutlinedIcon from '@mui/icons-material/CastleOutlined'; //for castle
 
 
-export const PopItems =[
-    {name:"LogIn"},
-    {name:"SignUp"},
-    {name:"Community"},
-    {name:"About HouSEE"},
-    {name:"Help"},
-]
+
 
 
 
@@ -30,7 +24,17 @@ export const Categories = [
     {Name:'BeachFront' , icon:<BeachAccessOutlinedIcon/>},
     {Name:'CountrySide' , icon:<ForestOutlinedIcon/>},
     {Name:'TreeHouse' , icon:<FoundationOutlinedIcon/>},
+    {Name:'TreeHouse' , icon:<FoundationOutlinedIcon/>},
+    {Name:'TreeHouse' , icon:<FoundationOutlinedIcon/>},
+    {Name:'TreeHouse' , icon:<FoundationOutlinedIcon/>},
+    {Name:'TreeHouse' , icon:<FoundationOutlinedIcon/>},
+    {Name:'TreeHouse' , icon:<FoundationOutlinedIcon/>},
+    {Name:'TreeHouse' , icon:<FoundationOutlinedIcon/>},
     {Name:'Design' , icon:<HouseOutlinedIcon/>},
+    {Name:'Castle' , icon:<CastleOutlinedIcon/>},
+    {Name:'Castle' , icon:<CastleOutlinedIcon/>},
+    {Name:'Castle' , icon:<CastleOutlinedIcon/>},
+    {Name:'Castle' , icon:<CastleOutlinedIcon/>},
     {Name:'Castle' , icon:<CastleOutlinedIcon/>},
 ]
 

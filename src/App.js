@@ -15,10 +15,10 @@ function App() {
     <div class="">
       <BrowserRouter>
     <Routes>
-      <Route path='/' exact element={<FirstPage/>}/>
+      <Route path='/' exact element={<DashBoard/>}/>
+      {/* <Route path='/' exact element={<FirstPage/>}/> */}
       <Route path='/loginpage' exact element={<LoginPage/>}/>
       <Route path='/signuppage' exact element={<SignupPage/>}/>
-      <Route path='dashboard' exact element={<DashBoard/>}/>
       <Route path='/community' exact element={<Community/>}/>
       <Route path='/blog' exact element={<Blog/>}/>
       <Route path='/about' exact element={<Abouthousee/>}/>
