@@ -1,38 +1,42 @@
 import React from 'react'
-import Categories from '../utils/Constants'
 import { useState } from 'react'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import Type from "../utils/icon.json"
 
 export const UpperBar = () => {
+
+    const scrollNext=()=>{
+           
+    }
 
     const [selectedCategory, setSelectedCategory] = useState("Amazing pools")
     const [selectedIcon ,setSelectedIcon] = useState()
 
     return (
         <section class="flex flex-row">
-            <div class="mt-[43px] ml-[70px] z-10 pl-[2px] pr-[2px]">
+            <div class="mt-[48px] ml-[60px] mr-[5px] z-10 pl-[2px] pr-[2px]">
                 <div class="border-[1px] border-gray-300 rounded-[50px] pb-[2px] px-[2px]"><KeyboardArrowLeftIcon/>
                     </div>
             </div>
-            <div className={`flex max-w-[1100px] overflow-scroll scrollbar-hide  mt-[25px] scroll-smooth `}>
-                {Categories.map((category, index) => (
+            <div className={`flex max-w-[1100px] overflow-scroll scrollbar-hide  mt-[10px] scroll-smooth `}>
+                {Type.map((category, index) => (
                     <div class="">
-                        <button class="hover:cursor-default h-[80px]">
-                            <div className={`flex flex-col text-[12px] font-medium  font-poppins  border-gray-300  pb-[10px] ${category.Name === selectedCategory ? "border-b-2 border-purple-500" : "hover:border-b-2"} pt-[12px]  ${index === 0 ? "ml-[0px]" : "mx-[16px]"} hover:cursor-pointer `}
-                                onClick={() =>( setSelectedCategory(category.Name),setSelectedIcon(category.icon))}>
-                                <span class={`${category.icon === selectedIcon ? "text-purple-700" : "text-gray-500"}
-                             mb-[8px] `}>{category.icon}</span>
-                                <span class={`${category.Name === selectedCategory ? "text-purple-700" : "text-gray-500"}  truncate `}>{category.Name}</span>
+                        <button class="hover:cursor-default h-[120px]">
+                            <div className={`flex flex-col text-[12px] font-medium  font-poppins border-gray-300  py-[11px] mt-[15px] ${category.title === selectedCategory ? "border-b-2 border-purple-500" : "hover:border-b-2"}  ${index === 0 ? "ml-[6px] mr-[22px]" : "mx-[22px]"} hover:cursor-pointer `}
+                                onClick={() =>( setSelectedCategory(category.title),setSelectedIcon(category.image))}>
+                                <img src={category.image} class={`${category.image === selectedIcon ? "text-purple-700" : "text-gray-500"}
+                             mb-[8px] h-[24px] w-[24px] justify-center mx-auto`}/>
+                                <span class={`${category.title === selectedCategory ? "text-purple-700" : "text-gray-700"}  `}>{category.title}</span>
                             </div>
                         </button>
                     </div>
                 )
                 )}
             </div>
-            <div class="mt-[43px]  mb-[20px] ml-[5px] rounded-[40px]  z-10 "
+            <div class="mt-[43px]  mb-[20px] ml-[5px] rounded-[40px]  z-3 "
             >
-               <div class="border-[1px] border-gray-300 rounded-[50px] pl-[2px] pr-[2px] pb-[2px]"><KeyboardArrowRightIcon/>
+               <div class="border-[1px] border-gray-300 rounded-[50px] mt-[5px] ml-[10px] pl-[2px] pr-[2px] pb-[2px]" onClick={()=>scrollNext()}><KeyboardArrowRightIcon/>
                 </div> 
             </div>
         </section>

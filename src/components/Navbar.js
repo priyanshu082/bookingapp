@@ -9,7 +9,7 @@ import Popup from './Popup'
 
 
 
-export const Navbar = () => {
+export const Navbar = ({setShowLogInPage}) => {
 
        const [Toggle, setToggle] = useState(false)
 
@@ -65,7 +65,8 @@ export const Navbar = () => {
                             </div>
                              <Popup
                        Toggle={Toggle}
-                       setToggle={setToggle}/>
+                       setToggle={setToggle}
+                       setShowLogInPage={setShowLogInPage}/>
                      </div>
                      
               </div>

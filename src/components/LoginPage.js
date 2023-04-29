@@ -9,7 +9,7 @@ export const LoginPage = () => {
 
 
     return (
-        <div class="pt-[110px] bg-[url('/src/bg-2.jpg')] bg-no-repeat bg-cover pb-[100px] relative">
+        <div class="pt-[110px] pb-[100px] relative">
             <div className=' form bg-white flex flex-row-reverse justify-between'>
                 <div>
                     <Intro />

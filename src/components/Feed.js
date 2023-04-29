@@ -4,7 +4,8 @@ import HotelCard from './HotelCard'
 export const Feed = () => {
   return (
     <div>
-<HotelCard/>
+        
+        <HotelCard/>
     </div>
   )
 }

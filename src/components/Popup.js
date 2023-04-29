@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-export const Popup = ({Toggle,setToggle}) => {
+export const Popup = ({Toggle,setShowLogInPage}) => {
 
     const Router =useNavigate()
 
@@ -13,8 +13,8 @@ export const Popup = ({Toggle,setToggle}) => {
             <div>
                 <div className={`hover:cursor-pointer pb-[10px] font-poppins font-light hover:text-purple-700 text-md tracking-wider`}
                 onClick={()=>{
-                    Router("/loginpage")
-                }}>LogIn</div>
+                    Router('/loginpage')
+                  }}>LogIn</div>
                 <div className={`hover:cursor-pointer pb-[10px] font-poppins font-medium hover:text-purple-700 text-md tracking-wider`}
                 onClick={()=>{
                     Router("/signuppage")
