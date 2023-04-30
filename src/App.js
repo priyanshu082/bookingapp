@@ -12,26 +12,26 @@ import { useEffect } from 'react';
 
 function App() {
 
-  const fetchFromAPI=async()=>{
-      const requestOptions={
-        "method" : "GET",
-        headers: {
-          'content-type': 'application/octet-stream',
-          'X-RapidAPI-Key': '8f398bc350msh575b261e9215a8dp126ad8jsna90a9109e66a',
-          'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
-        }
-      }
-      const Response=await fetch("https://airbnb19.p.rapidapi.com/api/v1/getCategory/?Cabins",requestOptions)
-      const data=await Response.json()
-      console.log(data)
-      if(!Response.ok){
-        console.error(data)
-      }
-  }
+  // const fetchFromAPI=async()=>{
+  //     const requestOptions={
+  //       "method" : "GET",
+  //       headers: {
+  //         'content-type': 'application/octet-stream',
+  //         'X-RapidAPI-Key': '8f398bc350msh575b261e9215a8dp126ad8jsna90a9109e66a',
+  //         'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
+  //       }
+  //     }
+  //     const Response=await fetch("https://airbnb19.p.rapidapi.com/api/v1/searchProperty/?8225",requestOptions)
+  //     const data=await Response.json()
+  //     console.log(data)
+  //     if(!Response.ok){
+  //       console.error(data)
+  //     }
+  // }
 
-  useEffect(() => {
-    fetchFromAPI()
-  }, [])
+  // useEffect(() => {
+  //   fetchFromAPI()
+  // }, [])
   
 
   return (

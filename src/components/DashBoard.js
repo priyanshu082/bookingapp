@@ -3,19 +3,22 @@ import UpperBar from './upperBar'
 import Navbar from './Navbar'
 import Feed from './Feed'
 import {fetchFromAPI } from '../utils/fetchFromAPI'
+import property from "../JSON Files/search_property.json"
 
 
 export const DashBoard = () => {
 
   const [info, setInfo] = useState([])
 
-useEffect(()=>{
-  fetchFromAPI(``).then((data)=>setInfo(data.items))
-},[info])
+// useEffect(()=>{
+//   fetchFromAPI(``).then((data)=>setInfo(data.items))
+// },[info])
 
-console.log(info)
+// console.log(info)
 
 // const [ShowLogInPage, setShowLogInPage] = useState(false)
+
+
 
 
   return (
@@ -34,9 +37,12 @@ console.log(info)
     <div>
       <Feed/>
     </div>
-    <div>
-     
-    </div>
+    
+    {/* <div>
+     {property.map((object)=>{
+           <img src={object.images.in[1]}/>
+     })}
+    </div> */}
     </div>
   )
 }
