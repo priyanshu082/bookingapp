@@ -1,8 +1,8 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import UpperBar from './upperBar'
 import Navbar from './Navbar'
 import Feed from './Feed'
-import {fetchFromAPI } from '../utils/fetchFromAPI'
+import { fetchFromAPI } from '../utils/fetchFromAPI'
 import property from "../JSON Files/search_property.json"
 
 
@@ -10,35 +10,33 @@ export const DashBoard = () => {
 
   const [info, setInfo] = useState([])
 
-// useEffect(()=>{
-//   fetchFromAPI(``).then((data)=>setInfo(data.items))
-// },[info])
+  // useEffect(()=>{
+  //   fetchFromAPI(``).then((data)=>setInfo(data.items))
+  // },[info])
 
-// console.log(info)
+  // console.log(info)
 
-// const [ShowLogInPage, setShowLogInPage] = useState(false)
+  // const [ShowLogInPage, setShowLogInPage] = useState(false)
 
 
 
 
   return (
-    <div>
-      <div >
-      <div class="z=[25]">
-      
+    <div className='flex flex-col'>
+      <div className='z-50 fixed flex flex-col w-full shadow '>
+         <div className=' w-full'>
+        <Navbar />
       </div>
-        <Navbar/>
-        {/* ShowLogInPage={ShowLogInPage}
-        setShowLogInPage={setShowLogInPage} */}
-        <UpperBar/>
-        {/* {ShowLogInPage ? <LoginPage/> : "" } */}
+      <div className='sticky'>
+        <UpperBar />
       </div>
-      
-    <div>
-      <Feed/>
-    </div>
-    
-    {/* <div>
+      </div>
+     
+      <div className="mt-[190px]">
+        <Feed />
+      </div>
+
+      {/* <div>
      {property.map((object)=>{
            <img src={object.images.in[1]}/>
      })}

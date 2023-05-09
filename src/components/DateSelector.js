@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const Body = () => {
+const DateSelector = () => {
   return (
     <div>
-      
+        
     </div>
   )
 }
 
-export default Body
+export default DateSelector

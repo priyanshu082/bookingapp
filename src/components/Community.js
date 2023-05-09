@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Calendar from "react-calendar"
 
 export const Community = () => {
   return (
@@ -7,8 +8,9 @@ export const Community = () => {
        <div>
                 <Navbar />
             </div>
-            <div>
-              Community
+            <div class="h-[200px] w-[500px] bg-yellow-300 p-[100px]">
+              <Calendar/>
+              
             </div>
     </div>
   )
