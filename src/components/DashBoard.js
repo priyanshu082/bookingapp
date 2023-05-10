@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import UpperBar from './upperBar'
-import Navbar from './Navbar'
+import UpperBar from './Navbar/upperBar'
+import Navbar from './Navbar/Navbar'
 import Feed from './Feed'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
 import property from "../JSON Files/search_property.json"

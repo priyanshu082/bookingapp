@@ -1,5 +1,5 @@
 import React from 'react'
-import rightpik2 from "../rightpik2.png"
+import rightpik2 from "./rightpik2.png"
 
 export const Right2 = () => {
   return (

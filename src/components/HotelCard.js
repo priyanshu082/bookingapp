@@ -12,18 +12,29 @@ const HotelCard = () => {
   const scrolll = () => {
     var left = document.querySelector(".hotelPhotoScroll");
     left.scrollBy(300,0)
+    console.log(left)
    }
+
   
    const scrollR = () => {
     var Right = document.querySelector(".hotelPhotoScroll");
     Right.scrollBy(-300,0)
    }
 
+  // var cars =['jump','sff','svfv']
+
+  
+  //  for (let j = 0; j < 7 ; j++) {
+  //      console.log(property[0].images[j]);
+  //   }
+  
+ 
+
   return (
     <div>
-      <div className='flex flex-col max-w-[300px] mb-[20px] mt-[20px]'>
-        <div className="relative group hover:scale-105 ">
-          <div className="absolute ml-[15px] invisible group-hover:visible transition-all ease-in-out hover:scale-110 hover:bg-white  mt-[132px] bg-white bg-opacity-80 rounded-3xl pb-[1px] pr-[1px]" onClick={scrollR}>
+      <div className='flex flex-col max-w-[300px] mb-[20px] mt-[20px] '>
+        <div className="relative group hover:scale-105 hover:cursor-pointer ">
+          <div className={` absolute ml-[15px] invisible group-hover:visible transition-all ease-in-out hover:scale-110 hover:bg-white  mt-[132px] bg-white bg-opacity-80 rounded-3xl pb-[1px] pr-[1px]`} onClick={scrollR}>
             <KeyboardArrowLeftIcon />
           </div>
           <div className=' absolute ml-[258px] mt-[132px] rounded-3xl pb-[1px] pl-[1px] invisible group-hover:visible transition-all ease-in-out hover:scale-110 hover:bg-white bg-white bg-opacity-80 ' onClick={scrolll}>
@@ -33,7 +44,16 @@ const HotelCard = () => {
             <FavoriteBorderOutlinedIcon />
           </div>
           <div className='flex flex-row overflow-scroll scrollbar-hide scroll-smooth hotelPhotoScroll rounded-b-[17px] rounded-t-[17px]'>
-            <img
+            
+              {property[0].images.map((image,key)=>(
+            <img src={image}
+             className='h-[286px] w-[auto] '/>
+                // console.log(image)
+               ))}
+        
+               
+            
+            {/* <img
             src={property[1].images[1]}
             className='h-[286px] w-[auto] ' />
           <img
@@ -44,9 +64,8 @@ const HotelCard = () => {
             className='h-[286px] w-[auto] ' />
           <img
             src={property[1].images[4]}
-            className='h-[286px] w-[auto] ' />
+            className='h-[286px] w-[auto] ' /> */}
           </div>
-          
         </div>
 
         <div className='pt-[10px] flex flex-col'>

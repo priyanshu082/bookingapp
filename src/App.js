@@ -3,11 +3,9 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Community from "./components/Community"
 import Blog from "./components/Blog"
 import Abouthousee from"./components/Abouthousee"
-import LoginPage from './components/LoginPage';
-import FirstPage from './components/FirstPage';
+import LoginPage from "./components/log_sign/LoginPage";
 import DashBoard from './components/DashBoard';
-import SignupPage from './components/SignupPage';
-import { useEffect } from 'react';
+import SignupPage from './components/log_sign/SignupPage';
 
 
 function App() {

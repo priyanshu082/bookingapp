@@ -13,6 +13,11 @@ export const Feed = () => {
         <HotelCard/>
         <HotelCard/>
         <HotelCard/>
+        <HotelCard/>
+        <HotelCard/>
+        <HotelCard/>
+        <HotelCard/>
+      
     </div>
   )
 }

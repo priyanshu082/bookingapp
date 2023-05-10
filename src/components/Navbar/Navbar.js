@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from '@mui/material'
-import logo from "../logo.png"
-import SearchIcon from "../images/icons8-search (1).svg"
-import side from "../images/user-3296.svg"
-import side2 from "../images/three-horizontal-lines-icon.svg"
-import world from "../images/earth-globe.png"
+import logo from "./images/logo.png"
+import SearchIcon from "./images/icons8-search (1).svg"
+import side from "./images/user-3296.svg"
+import side2 from "./images/three-horizontal-lines-icon.svg"
+import world from "./images/earth-globe.png"
 import Popup from './Popup'
 
 

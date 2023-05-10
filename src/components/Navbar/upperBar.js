@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import Type from "../JSON Files/icon.json"
+import Type from "../../JSON Files/icon.json"
 
 export const UpperBar = () => {
 
