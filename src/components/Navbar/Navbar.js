@@ -9,9 +9,18 @@ import DateSelector1 from './DateSelector1'
 
 
 
-export const Navbar = ({setShowLogInPage}) => {
+export const Navbar = ({ setShowLogInPage }) => {
 
        const [Toggle, setToggle] = useState(false)
+
+       const [category, setCategory] = useState("")
+
+
+       const NavContent = [
+              { Title: "Stays" },
+              { Title: "Experiences" },
+              { Title: "Online Experiences" }
+       ]
 
 
        return (
@@ -23,17 +32,23 @@ export const Navbar = ({setShowLogInPage}) => {
                                           <div class="ml-[2px] text-purple-800 font-poppins font-bold tracking-wide text-2xl pt-[8px]">HouSEE</div>
                                    </div>
                             </Link>
-                            
+
                             {/* <button>
                                    <DateSelector1/> 
                             </button> */}
-                            <div class="flex flex-row space-x-8 font-poppins mt-[15px] hover:cursor-pointer ">
-                                 <span class="hover:border-b-2 border-black pb-[4px] text-gray-500 ">Stays</span> 
-                                 <span class="hover:border-b-2 border-black pb-[4px] text-gray-500 ">Experiences</span> 
-                                 <span class="hover:border-b-2 border-black pb-[4px] text-gray-500 hover:text-black">Online Experiences</span> 
+                            <div>
+                                   <div class="flex flex-row space-x-8 font-poppins mt-[12px]">
+                                          {NavContent.map((Nav, index) => (
+                                                 <div onClick={() => (setCategory(Nav.Title))}>
+                                                        <span class={` pb-[4px]  hover:cursor-pointer ${Nav.Title === category ? "text-black border-b-[2px] border-black" : "text-gray-700 hover:border-b-[2px] hover:border-gray-400 hover:text-gray-400"}`}>
+                                                        {Nav.Title}
+                                                        </span>
+                                                 </div>
+                                          ))}
+                                   </div>
                             </div>
 
-                           
+
 
                             <div class="flex flex-row">
                                    <div >
@@ -54,12 +69,12 @@ export const Navbar = ({setShowLogInPage}) => {
                                           </button>
                                    </div>
                             </div>
-                             <Popup
-                       Toggle={Toggle}
-                       setToggle={setToggle}
-                       setShowLogInPage={setShowLogInPage}/>
+                            <Popup
+                                   Toggle={Toggle}
+                                   setToggle={setToggle}
+                                   setShowLogInPage={setShowLogInPage} />
                      </div>
-                     
+
               </div>
 
        )
