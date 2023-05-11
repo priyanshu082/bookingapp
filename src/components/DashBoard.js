@@ -22,10 +22,10 @@ export const DashBoard = () => {
 
   return (
     <div className=''>
-      <div className='z-50 fixed flex flex-col w-full shadow'>
+      <div className='z-50 fixed flex flex-col w-full '>
         <Navbar />
       </div>
-      <div className='pt-[80px] fixed z-[10] w-full'>
+      <div className='pt-[80px] fixed z-[10] w-full shadow'>
         <UpperBar />
       </div>
      

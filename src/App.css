@@ -40,83 +40,6 @@
   }
 }
 
-/* .btn {
-  border: 0px solid rgba(35, 71, 217, 0.71);
-  border-radius: 10px;
-  background-color: rgb(222, 242, 239); 
-  transition: box-shadow 300ms ease-out;
-  font: normal lighter 17px/1 "proxima-nova";
-  letter-spacing: 1px;
-  color: black;
-  padding: 8px;
-  font-weight: 300;
-} */
-/* .btn-4 {
-  border: 0px solid rgba(35, 71, 217, 0.71);
-  border-radius: 10px;
-  background-color: rgb(222, 242, 239); 
-  transition: box-shadow 300ms ease-out;
-  font: normal lighter 24px/1 "proxima-nova";
-  letter-spacing: 1px;
-  color: black;
-  padding: 8px;
-  font-weight: 100; 
-  height: 40px;
-  width: 100px;
-
-} */
-/* .btn-2 {
-  border: 0px solid rgba(35, 71, 217, 0.71);
-  border-radius: 10px;
-  background-color: rgb(222, 242, 239); 
-  transition: box-shadow 300ms ease-out;
-  font: normal lighter 17px/1 "proxima-nova";
-  letter-spacing: 1px;
-  color: black;
-  padding: 8px;
-  font-weight: 300;
-  margin-top: 10px;
-} */
-
-/* .btn-3 {
-  border: 0px solid rgba(35, 71, 217, 0.71);
-  border-radius: 10px;
-  background-color: rgb(222, 242, 239); 
-  transition: box-shadow 300ms ease-out;
-  font: normal lighter 17px/1 "proxima-nova";
-  letter-spacing: 1px;
-  color: black;
-  padding: 8px;
-  font-weight: 300;
-  height: 40px;
-  width: 80px;
-
-} */
-
-
-/* .btn:hover {
-  box-shadow: 3px 3px 0px 0px rgb(17, 146, 216);
-  background-color:rgb(218, 176, 113);
-   transition: 200ms; 
-}
-
-.btn-4:hover {
-  box-shadow: 2px 2px 0px 0px rgb(17, 146, 216);
-  background-color:rgb(218, 176, 113);
-   transition: 200ms; 
-}
-
-.btn-2:hover {
-  box-shadow: 2px 2px 0px 0px rgb(17, 146, 216);
-  /* background-color:rgb(230, 188, 125); 
-   transition: 100ms; 
-}
-.btn-3:hover {
-  box-shadow: 2px 2px 0px 0px rgb(17, 146, 216);
-  background-color:rgb(218, 176, 113);
-   transition: 100ms; 
-} */
-
 
 .form {
   margin: auto;
@@ -135,7 +58,7 @@
 }
 
 .main-page {
-  background-image: url("./bg-2.jpg") ;
+  background-image: url("./images/bg-2.jpg") ;
   background-repeat: no-repeat; 
   background-size: 100% 90%;
   /* transform: rotate(90deg); */
@@ -165,6 +88,7 @@
   letter-spacing: 1px;
   font-weight: 400;
 }
+
 .btn-3 {
   border-radius: 15px;
   background: linear-gradient(
