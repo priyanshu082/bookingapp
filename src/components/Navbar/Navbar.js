@@ -5,6 +5,7 @@ import side from "./images/user-3296.svg"
 import side2 from "./images/three-horizontal-lines-icon.svg"
 import world from "./images/earth-globe.png"
 import Popup from './Popup'
+import StayPopup from './StayPopup'
 import DateSelector1 from './DateSelector1'
 
 
@@ -33,20 +34,24 @@ export const Navbar = ({ setShowLogInPage }) => {
                                    </div>
                             </Link>
 
-                            {/* <button>
+                             {/* <button>
                                    <DateSelector1/> 
                             </button> */}
-                            <div>
-                                   <div class="flex flex-row space-x-8 font-poppins mt-[12px]">
-                                          {NavContent.map((Nav, index) => (
-                                                 <div onClick={() => (setCategory(Nav.Title))}>
-                                                        <span class={` pb-[4px]  hover:cursor-pointer ${Nav.Title === category ? "text-black border-b-[2px] border-black" : "text-gray-700 hover:border-b-[2px] hover:border-gray-400 hover:text-gray-400"}`}>
-                                                        {Nav.Title}
-                                                        </span>
-                                                 </div>
-                                          ))}
-                                   </div>
+                            <div class="flex flex-col">
+                            <div class="flex flex-row space-x-8 font-poppins mt-[12px] m-auto">
+                                   {NavContent.map((Nav, index) => (
+                                   <div onClick={() => (setCategory(Nav.Title))}>
+                                          <span class={` pb-[4px]  hover:cursor-pointer ${Nav.Title === category ? "text-black border-b-[2px] border-black" : "text-gray-700 hover:border-b-[2px] hover:border-gray-400 hover:text-gray-400"}`}>
+                                          {Nav.Title}
+                                          </span>
+                                   </div>))}
                             </div>
+
+                           <div>
+                                   <StayPopup/>
+                            </div>
+                            </div> 
+                            
 
 
 

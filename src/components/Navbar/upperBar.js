@@ -20,7 +20,7 @@ export const UpperBar = () => {
     
 
     return (
-        <section class="flex flex-row">
+        <section class="flex flex-row bg-white">
             <div class="mt-[45px] ml-[60px] mr-[5px] pl-[2px] pr-[2px]">
                 <div class="border-[1px] border-gray-300 rounded-[50px] pb-[2px] px-[2px] hover:shadow-lg hover:scale-105 hover:cursor-pointer"
                 onClick={scrolll}><KeyboardArrowLeftIcon />
