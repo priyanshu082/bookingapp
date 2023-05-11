@@ -1,17 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
 import Calendar from "react-calendar"
+import DateSelector2 from './DateSelector2'
 
 export const Community = () => {
   return (
     <div>
-       <div>
-                <Navbar />
-            </div>
-            <div class="h-[200px] w-[500px] bg-yellow-300 p-[100px]">
-              <Calendar/>
-              
-            </div>
+      <DateSelector2/>
     </div>
   )
 }

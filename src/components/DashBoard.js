@@ -3,12 +3,11 @@ import UpperBar from './Navbar/upperBar'
 import Navbar from './Navbar/Navbar'
 import Feed from './Feed'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
-import property from "../JSON Files/search_property.json"
 
 
 export const DashBoard = () => {
 
-  const [info, setInfo] = useState([])
+  // const [info, setInfo] = useState([])
 
   // useEffect(()=>{
   //   fetchFromAPI(``).then((data)=>setInfo(data.items))
@@ -36,11 +35,6 @@ export const DashBoard = () => {
         <Feed />
       </div>
 
-      {/* <div>
-     {property.map((object)=>{
-           <img src={object.images.in[1]}/>
-     })}
-    </div> */}
     </div>
   )
 }
