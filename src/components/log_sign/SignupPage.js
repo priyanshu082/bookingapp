@@ -1,5 +1,5 @@
 import React from 'react'
-import Intro from '../Intro'
+import Intro from './Intro'
 import Right2 from './Right2'
 import Register from "./SignUpform"
 

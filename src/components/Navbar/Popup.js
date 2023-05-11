@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-export const Popup = ({Toggle,setShowLogInPage}) => {
+export const Popup = ({Toggle}) => {
 
     const Router =useNavigate()
 

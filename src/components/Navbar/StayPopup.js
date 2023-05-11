@@ -2,19 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import SearchIcon from "./images/SearchIcon.svg"
 
-export const StayPopup = () => {
+export const StayPopup = ({setToggle2}) => {
 
     const [categoryStay, setCategoryStay] = useState("")
 
-     const StayContent = [
-        {Title:"Where"},
-        {Title:"Check in"},
-        {Title:"Check out"},
-        {Title:"Who"},
-     ]
-
   return ( 
-    <div className="flex flex-row w-[750px] mt-[30px] border-[1px] bg-black bg-opacity-10  rounded-s-[80px] rounded-e-[80px] font-poppins text-[11px] font-extrabold">
+    <div className="flex flex-row w-[750px] mt-[30px] border-[1px] bg-black bg-opacity-10 rounded-s-[80px] rounded-e-[80px] font-poppins text-[11px] font-extrabold ">
 
            <div className={`${"Where" === categoryStay ? 'bg-white shadow-[0_2px_10px_2px_rgba(0,0,0,0.3)] scale-105 border-[1px] rounded-[40px]' : "transparent"} w-[35%] p-[12px] pl-[30px] pt-[15px] mr-[5px] hover:cursor-pointer`}
            onClick={()=>(setCategoryStay("Where"))}>
@@ -50,12 +43,13 @@ export const StayPopup = () => {
             <input
             placeholder='Add guest'
             type='text'
-            className="focus:outline-none bg-transparent placeholder-gray-500 font-medium text-[12px]"/>
+            className="focus:outline-none bg-transparent placeholder-gray-500 font-medium text-[12px] w-[85px]"/>
            </div>
 
-           <div className='flex flex-row bg-purple-600 w-[140px] h-[78%] rounded-[40px] p-[14px] m-auto mr-[15px] ml-[10px]' >
+           <div className='flex flex-row bg-purple-600 w-[130px] h-[78%] rounded-[40px] p-[14px] m-auto mr-[0px] ml-[13px] pl-[23px]' 
+           onClick={()=>(setToggle2((prev)=>!prev))}>
                <div>
-                  <img src={SearchIcon} className='h-[18px] w-[18px] mr-[20px] mt-[px]'/> 
+                  <img src={SearchIcon} className='h-[18px] w-[18px] mr-[10px] mt-[px]'/> 
                </div>
                <div className='pt-[2px] text-white text-[16px] align-middle mt-[-5px]'>
                    Search

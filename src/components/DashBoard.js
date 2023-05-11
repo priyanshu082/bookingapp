@@ -21,17 +21,15 @@ export const DashBoard = () => {
 
 
   return (
-    <div className='flex flex-col'>
-      <div className='z-50 fixed flex flex-col w-full shadow '>
-         <div className=' w-full'>
+    <div className=''>
+      <div className='z-50 fixed flex flex-col w-full shadow'>
         <Navbar />
       </div>
-      <div className='sticky'>
+      <div className='pt-[80px] fixed z-[10] w-full'>
         <UpperBar />
       </div>
-      </div>
      
-      <div className="mt-[190px]">
+      <div className="pt-[200px]">
         <Feed />
       </div>
 

@@ -20,13 +20,13 @@ export const UpperBar = () => {
     
 
     return (
-        <section class="flex flex-row bg-white">
+        <section class="flex flex-row bg-white shadow-inner">
             <div class="mt-[45px] ml-[60px] mr-[5px] pl-[2px] pr-[2px]">
                 <div class="border-[1px] border-gray-300 rounded-[50px] pb-[2px] px-[2px] hover:shadow-lg hover:scale-105 hover:cursor-pointer"
-                onClick={scrolll}><KeyboardArrowLeftIcon />
+                onClick={scrolll}><KeyboardArrowLeftIcon/>
                 </div>
             </div>
-            <div className={`category flex w-[1100px] overflow-scroll scrollbar-hide mt-[0px] scroll-smooth`}>
+            <div className={`category flex w-[1200px] overflow-scroll scrollbar-hide mt-[0px] scroll-smooth`}>
                 {Type.map((category, index) => (
                     <div class="">
                         <button class="hover:cursor-default h-[110px]">
