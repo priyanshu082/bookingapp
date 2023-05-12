@@ -46,25 +46,11 @@ const HotelCard = () => {
           <div className='flex flex-row overflow-scroll scrollbar-hide scroll-smooth hotelPhotoScroll rounded-b-[17px] rounded-t-[17px]'>
             
               {property[0].images.map((image,key)=>(
-            <img src={image}
+            <img src={image} alt='Icon'
              className='h-[286px] w-[auto] '/>
-                // console.log(image)
                ))}
         
                
-            
-            {/* <img
-            src={property[1].images[1]}
-            className='h-[286px] w-[auto] ' />
-          <img
-            src={property[1].images[2]}
-            className='h-[286px] w-[auto] ' />
-          <img
-            src={property[1].images[3]}
-            className='h-[286px] w-[auto] ' />
-          <img
-            src={property[1].images[4]}
-            className='h-[286px] w-[auto] ' /> */}
           </div>
         </div>
 
@@ -74,7 +60,7 @@ const HotelCard = () => {
               Wadi Rum , Jordan
             </span>
             <div className='flex fex-row mr-[2px]'>
-              <img src={starRate} className='h-[13px] w-[13px] mr-[4px] mt-[6px]' />
+              <img src={starRate} alt='Icon' className='h-[13px] w-[13px] mr-[4px] mt-[6px]' />
               <span className='mb-[0px] font-light'>4.91</span>
             </div>
           </div>

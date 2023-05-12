@@ -32,7 +32,7 @@ export const UpperBar = () => {
                         <button class="hover:cursor-default h-[110px]">
                             <div className={`flex flex-col text-[12px] font-medium  font-poppins border-gray-300  py-[11px] mt-[15px] ${category.title === selectedCategory ? "border-b-2 border-purple-500" : "hover:border-b-2"}  ${index === 0 ? "ml-[6px] mr-[22px]" : "mx-[22px]"} hover:cursor-pointer `}
                                 onClick={() => (setSelectedCategory(category.title))}>
-                                <img src={category.image} class={`mb-[8px] h-[24px] w-[24px] justify-center mx-auto`}/>
+                                <img src={category.image} alt='Icon' class={`mb-[8px] h-[24px] w-[24px] justify-center mx-auto`}/>
                                 <span class={`truncate`}>{category.title}</span>
                             </div>
                         </button>
