@@ -12,7 +12,7 @@ import DateSelector2 from './DateSelector2'
 
 export const Navbar = ({ setShowLogInPage }) => {
 
-       const [Toggle, setToggle] = useState(false)
+       const [toggle, setToggle] = useState(false)
 
        const [toggle2, setToggle2] = useState(false)
 
@@ -55,7 +55,7 @@ export const Navbar = ({ setShowLogInPage }) => {
                                    </div>
                             </div>
                             <Popup
-                                   Toggle={Toggle}
+                                   toggle={toggle}
                                    setToggle={setToggle}
                                    setShowLogInPage={setShowLogInPage} />
                      </div>

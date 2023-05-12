@@ -20,14 +20,6 @@ const HotelCard = () => {
     var Right = document.querySelector(".hotelPhotoScroll");
     Right.scrollBy(-300,0)
    }
-
-  // var cars =['jump','sff','svfv']
-
-  
-  //  for (let j = 0; j < 7 ; j++) {
-  //      console.log(property[0].images[j]);
-  //   }
-  
  
 
   return (
