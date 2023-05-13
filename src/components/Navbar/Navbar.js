@@ -28,10 +28,10 @@ export const Navbar = ({ setShowLogInPage }) => {
                             </Link>
 
                             <button onClick={() => { setToggle2((prev) => !prev) }}>
-                                   {toggle2 && <DateSelector1 />}
+                                   {!toggle2 && <DateSelector1 />}
                             </button>
 
-                            {!toggle2 && <DateSelector2
+                            {toggle2 && <DateSelector2
                                    setToggle2={setToggle2} />}
 
 
