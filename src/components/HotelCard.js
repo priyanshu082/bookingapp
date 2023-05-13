@@ -23,7 +23,7 @@ const HotelCard = () => {
  
 
   return (
-    <div>
+    <div className='mx-[15px]'>
       <div className='flex flex-col max-w-[300px] mb-[20px] mt-[20px] '>
         <div className="relative group hover:scale-105 hover:cursor-pointer ">
           <div className={` absolute ml-[15px] invisible group-hover:visible transition-all ease-in-out hover:scale-110 hover:bg-white  mt-[132px] bg-white bg-opacity-80 rounded-3xl pb-[1px] pr-[1px]`} onClick={scrollR}>

@@ -3,7 +3,7 @@ import HotelCard from './HotelCard'
 
 export const Feed = () => {
   return (
-    <div className='flex flex-row justify-between flex-wrap mx-[70px]'>
+    <div className='flex flex-row justify-between flex-wrap mx-[60px]'>
         
         <HotelCard/>
         <HotelCard/>
