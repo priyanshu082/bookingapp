@@ -1,11 +1,9 @@
 import React , { useState} from 'react'
 import Calendar from 'react-calendar'
 
-const Calendar2 = () => {
+const Calendar2 = ({setDate2,date2}) => {
 
- const [date2, setDate2] = useState(new Date())
-
- console.log(date2)
+//  console.log(date2)
 
   return (
     
