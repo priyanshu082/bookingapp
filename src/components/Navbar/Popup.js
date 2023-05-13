@@ -12,7 +12,7 @@ export const Popup = ({toggle}) => {
             <div>
                 <div className={`hover:cursor-pointer pb-[10px] font-poppins font-light hover:text-purple-700 text-md tracking-wider`}
                 onClick={()=>{
-                    Router('/loginpage')
+                    Router('/')
                   }}>LogIn</div>
                 <div className={`hover:cursor-pointer pb-[10px] font-poppins font-medium hover:text-purple-700 text-md tracking-wider`}
                 onClick={()=>{

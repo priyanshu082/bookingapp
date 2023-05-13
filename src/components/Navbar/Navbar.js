@@ -20,7 +20,7 @@ export const Navbar = ({ setShowLogInPage }) => {
        return (
               <div class="">
                      <div class="flex flex-row justify-between pt-[20px] bg-white text-align border-b-[1px]  pb-[18px]">
-                            <Link href='/' underline='none'>
+                            <Link href='/dashboard' underline='none'>
                                    <div class="flex flex-row md:ml-[75px] sm:ml-[20px] ">
                                           <div class=" h-10 w-10 pt-[4px]"><img src={logo} alt='logo' /></div>
                                           <div class="ml-[2px] text-purple-800 font-poppins font-bold tracking-wide text-2xl pt-[8px]">HouSEE</div>

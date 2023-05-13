@@ -37,9 +37,9 @@ function App() {
     <div class="">
       <BrowserRouter>
     <Routes>
-      <Route path='/' exact element={<DashBoard/>}/>
+      <Route path='/dashboard' exact element={<DashBoard/>}/>
       {/* <Route path='/' exact element={<FirstPage/>}/> */}
-      <Route path='/loginpage' exact element={<LoginPage/>}/>
+      <Route path='/' exact element={<LoginPage/>}/>
       <Route path='/signuppage' exact element={<SignupPage/>}/>
       <Route path='/community' exact element={<Community/>}/>
       <Route path='/blog' exact element={<Blog/>}/>
