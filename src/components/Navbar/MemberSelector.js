@@ -14,8 +14,8 @@ export const MemberSelector = () => {
     // console.log(adult)
 
   return (
-    <div className='memberSelector flex flex-col ml-[430px] bg-white w-[50%] px-[15px] pt-[10px] mt-[15px] rounded-[10px] font-poppins'>
-        <div className='flex flex-row space-x-2 justify-between border-b-[1px] py-[10px] pb-[20px]'>
+    <div className='memberSelector flex flex-col ml-[380px] bg-white w-[55%] px-[30px] pt-[20px] mt-[15px] rounded-[30px] font-poppins text-[16px] font-semibold text-gray-700'>
+        <div className='flex flex-row space-x-2 justify-between border-b-[1px] py-[0px] pb-[20px]'>
             <div>
                 <div>
                  Adults
@@ -35,7 +35,7 @@ export const MemberSelector = () => {
                     setAdult(0)
                 }
             }}>
-                <RemoveCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                <RemoveCircleOutlineOutlinedIcon className={`${adult===0 ? "text-gray-200" : "text-gray-500"}`} sx={{fontSize:"30px"}}/>
             </div>
             <div className="space-x-2 mt-[2px]">
                 {adult}
@@ -44,7 +44,7 @@ export const MemberSelector = () => {
              onClick={()=>{
                 setAdult((p)=>p+1)
              }}>
-                 <AddCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                 <AddCircleOutlineOutlinedIcon className='text-gray-500' sx={{fontSize:"30px"}}/>
             </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ export const MemberSelector = () => {
 
 
 
-        <div className='flex flex-row space-x-2 justify-between border-b-[1px] pb-[20px] py-[10px]'>
+        <div className='flex flex-row space-x-2 justify-between border-b-[1px] pb-[20px] py-[15px]'>
             <div>
                 <div>
                  Children
@@ -73,7 +73,7 @@ export const MemberSelector = () => {
                     setChildren(0)
                 }
             }}>
-                <RemoveCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                <RemoveCircleOutlineOutlinedIcon className={`${ children === 0 ? "text-gray-200" : "text-gray-500"}`} sx={{ fontSize:"30px" }}/>
             </div>
             <div className="space-x-2 mt-[2px]">
                 {children}
@@ -83,7 +83,7 @@ export const MemberSelector = () => {
                 setChildren((p)=>p+1)
              }}
             >
-                 <AddCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                 <AddCircleOutlineOutlinedIcon className='text-gray-500' sx={{fontSize:"30px"}}/>
             </div>
             </div>
         </div>
@@ -92,7 +92,7 @@ export const MemberSelector = () => {
 
 
 
-        <div className='flex flex-row space-x-2 justify-between border-b-[1px] pb-[20px] py-[10px]'>
+        <div className='flex flex-row space-x-2 justify-between border-b-[1px] pb-[20px] py-[15px]'>
             <div>
                 <div>
                 Infants
@@ -112,7 +112,7 @@ export const MemberSelector = () => {
                     setInfants(0)
                 }
             }}>
-                <RemoveCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                <RemoveCircleOutlineOutlinedIcon className={`${infants===0 ? "text-gray-200" : "text-gray-500"}`} sx={{fontSize:"30px" }}/>
             </div>
             <div className="space-x-2 mt-[2px]">
                 {infants}
@@ -122,7 +122,7 @@ export const MemberSelector = () => {
                 setInfants((p)=>p+1)
              }}
             >
-                 <AddCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                 <AddCircleOutlineOutlinedIcon className='text-gray-500' sx={{fontSize:"30px" }}/>
             </div>
             </div>
         </div>
@@ -130,12 +130,12 @@ export const MemberSelector = () => {
 
 
 
-        <div className='flex flex-row space-x-2 justify-between pb-[20px] py-[10px]'>
+        <div className='flex flex-row space-x-2 justify-between pb-[30px] py-[15px]'>
             <div>
                 <div>
                  Pets
             </div>
-            <div className='font-medium text-gray-400 text-[14px] underline'>
+            <div className='font-medium text-gray-400 text-[14px] underline hover:cursor-pointer hover:text-black'>
                 Bringing a service animal?
             </div>
             </div>
@@ -143,14 +143,14 @@ export const MemberSelector = () => {
             <div className='flex flex-row justify-between w-[35%] mr-[10px] pt-[8px]'>
             <div 
             onClick={()=>{
-                if(adult>=1){
+                if(pets>=1){
                     setPets((p)=>p-1)
                 }
                 else{
                     setPets(0)
                 }
             }}>
-                <RemoveCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                <RemoveCircleOutlineOutlinedIcon className={`${pets===0 ? "text-gray-200" : "text-gray-500"}`} sx={{fontSize:"30px" }}/>
             </div>
             <div className="space-x-2 mt-[2px]">
                 {pets}
@@ -160,7 +160,7 @@ export const MemberSelector = () => {
                 setPets((p)=>p+1)
              }}
             >
-                 <AddCircleOutlineOutlinedIcon sx={{fontSize:"30px",color:"gray" }}/>
+                 <AddCircleOutlineOutlinedIcon className='text-gray-500' sx={{fontSize:"30px",color:"gray" }}/>
             </div>
             </div>
         </div>

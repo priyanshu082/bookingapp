@@ -52,7 +52,7 @@ export const Calendars = () => {
   //  console.log(dates)
 
   return (
-    <div className={`${!toggle3 ? "visible" : "hidden"} react-calendar bg-white rounded-[20px] m-auto`}>
+    <div className={`${!toggle3 ? "visible" : "hidden"} react-calendar bg-white rounded-[20px] m-auto `}>
       <Calendar onChange={setDates} value={dates} />
       {/* <div className='hidden'>
         <StayPopup
