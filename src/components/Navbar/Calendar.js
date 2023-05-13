@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Calendar from 'react-calendar'
-import StayPopup from './Navbar/StayPopup'
+import StayPopup from './StayPopup'
 
 export const Calendars = () => {
 
@@ -52,15 +52,15 @@ export const Calendars = () => {
   //  console.log(dates)
 
   return (
-    <div className={`${toggle3 ? "visible" : "hidden"} react-calendar bg-white rounded-[20px] m-auto`}>
+    <div className={`${!toggle3 ? "visible" : "hidden"} react-calendar bg-white rounded-[20px] m-auto`}>
       <Calendar onChange={setDates} value={dates} />
-      <div className='hidden'>
+      {/* <div className='hidden'>
         <StayPopup
           setToggle3={setToggle3}
           dates={dates}
           day={day}
-          Month={Month} />
-      </div>
+          Month={Month}/>
+      </div> */}
 
     </div>
   )

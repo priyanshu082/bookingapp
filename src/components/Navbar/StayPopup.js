@@ -1,19 +1,20 @@
 import React from 'react'
 import { useState } from 'react'
 import SearchIcon from "./images/SearchIcon.svg"
+import Calendar2 from './Calendar2'
+import Calendars from './Calendar'
+import MemberSelector from './MemberSelector'
 
 
 export const StayPopup = ({ dates, day, Month, setToggle2, setToggle3 }) => {
 
   const [categoryStay, setCategoryStay] = useState("")
 
-  console.log(dates)
+  // console.log(dates)
   // var day = {dates}
 
   return (
     <div>
-
-
       <div className="flex flex-row w-[750px] mt-[30px] border-[1px] border-gray-300 bg-black bg-opacity-5 rounded-s-[80px] rounded-e-[80px] font-poppins text-[13px] font-extrabold mr-[45px]">
 
         <div className={`${"Where" === categoryStay ? 'bg-white shadow-[0_2px_10px_2px_rgba(0,0,0,0.3)] scale-105 border-[1px] rounded-[40px]' : "transparent"} w-[35%] p-[12px] pl-[30px] pt-[15px] mr-[5px] hover:cursor-pointer`}
@@ -37,7 +38,7 @@ export const StayPopup = ({ dates, day, Month, setToggle2, setToggle3 }) => {
         <div className={`${"Check In" === categoryStay ? 'bg-white shadow-[0_2px_10px_2px_rgba(0,0,0,0.3)] scale-105 border-[1px] rounded-[40px]' : "transparent"} w-[15%] p-[12px] pl-[15px] pt-[15px] hover:cursor-pointer`}
 
           onClick={() => {
-            (setToggle3((prev)=>!prev))
+            // (setToggle3((prev)=>!prev))
 
             if (categoryStay === "Check In") {
               setCategoryStay("")
@@ -103,6 +104,17 @@ export const StayPopup = ({ dates, day, Month, setToggle2, setToggle3 }) => {
 
         </div>
       </div>
+      <div className=' mt-[15px] absolute ml-[40px]'>
+        {categoryStay=== "Check In" &&  <Calendars/>}
+      </div>
+      <div className=' absolute ml-[110px] mt-[15px]'>
+      {categoryStay=== "Check Out" &&  <Calendar2/>}
+      </div>
+      <div className='absolute '>
+        {categoryStay==="Who" && <MemberSelector/>}
+      </div>
+     
+                                  
     </div>
   )
 }

@@ -3,7 +3,8 @@ import UpperBar from './Navbar/upperBar'
 import Navbar from './Navbar/Navbar'
 import Feed from './Feed'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
-import Calendars from './Calendar'
+import Calendars from './Navbar/Calendar'
+import Calendar2 from './Navbar/Calendar2'
 
 
 export const DashBoard = () => {
@@ -18,16 +19,13 @@ export const DashBoard = () => {
 
   // const [ShowLogInPage, setShowLogInPage] = useState(false)
 
-
+  //  const [selectedCat, setSelectedCat] = useState("")
 
 
   return (
     <div className=''>
       <div className='z-50 fixed flex flex-col w-full '>
         <Navbar />
-        <div className='z-[20] '>
-       <Calendars/>
-      </div>
       </div>
       <div className='pt-[71px] fixed z-[10] w-full shadow'>
         <UpperBar />

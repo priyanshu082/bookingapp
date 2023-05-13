@@ -1,5 +1,5 @@
 import React from 'react'
-import Calendars from './Calendar'
+import Calendars from './Navbar/Calendar'
 
 
 export const Community = ({faltu}) => {

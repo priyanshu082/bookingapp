@@ -29,6 +29,7 @@ export const DateSelector2 = ({setToggle2}) => {
                            <div>
                                    <StayPopup
                                    setToggle2={setToggle2}/>
+                                   
                             </div>
                             </div> 
     </div>
