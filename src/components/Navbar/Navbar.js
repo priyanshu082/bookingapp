@@ -5,8 +5,8 @@ import side from "./images/user-3296.svg"
 import side2 from "./images/three-horizontal-lines-icon.svg"
 import world from "./images/earth-globe.png"
 import Popup from './Popup'
-import DateSelector1 from './DateSelector1'
-import DateSelector2 from './DateSelector2'
+import DateSelector1 from './Selector1'
+import DateSelector2 from './Selector2'
 
 
 
