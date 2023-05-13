@@ -38,7 +38,7 @@ export const Navbar = ({ setShowLogInPage }) => {
                             <div class="flex flex-row">
                                    <div >
                                           <button class="mt-[12px] mr-[20px] shadow-xl">
-                                                 <img src={world} class="h-[17px] w-[17px]" />
+                                                 <img src={world} alt='pp' class="h-[17px] w-[17px]" />
                                           </button>
                                    </div>
 
@@ -48,8 +48,8 @@ export const Navbar = ({ setShowLogInPage }) => {
                                                         setToggle((prev) => !prev)
                                                  }}>
                                                  <div className='flex flex-row'>
-                                                        <img src={side2} class="h-[12px] w-[14px] mt-[9px] mr-[14px] ml-[10px]" />
-                                                        <img src={side} class="h-[30px] w-[30px] pb-[0px]" />
+                                                        <img src={side2} alt='pp' class="h-[12px] w-[14px] mt-[9px] mr-[14px] ml-[10px]" />
+                                                        <img src={side} alt='pp' class="h-[30px] w-[30px] pb-[0px]" />
                                                  </div>
                                           </button>
                                    </div>

@@ -4,14 +4,7 @@ import RemoveCircleOutlineOutlinedIcon from '@mui/icons-material/RemoveCircleOut
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 
 
-export const MemberSelector = () => {
-
-    const [adult, setAdult] = useState(0)
-    const [children, setChildren] = useState(0)
-    const [infants, setInfants] = useState(0)
-    const [pets, setPets] = useState(0)
-
-    // console.log(adult)
+export const MemberSelector = ({setAdult,adult,children,setChildren,setInfants,infants,setPets,pets}) => {
 
   return (
     <div className='memberSelector flex flex-col ml-[380px] bg-white w-[55%] px-[30px] pt-[20px] mt-[15px] rounded-[30px] font-poppins text-[16px] font-semibold text-gray-700'>

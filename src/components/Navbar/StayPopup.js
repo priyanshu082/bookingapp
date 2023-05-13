@@ -9,6 +9,10 @@ import MemberSelector from './MemberSelector'
 export const StayPopup = ({ dates, day, Month, setToggle2, setToggle3 }) => {
 
   const [categoryStay, setCategoryStay] = useState("")
+  const [adult, setAdult] = useState(0)
+  const [children, setChildren] = useState(0)
+  const [infants, setInfants] = useState(0)
+  const [pets, setPets] = useState(0)
 
   // console.log(dates)
   // var day = {dates}
@@ -95,7 +99,7 @@ export const StayPopup = ({ dates, day, Month, setToggle2, setToggle3 }) => {
            onClick={()=>(setToggle2((prev) => !prev))}
           >
             <div>
-              <img src={SearchIcon} className='h-[18px] w-[18px] mr-[7px]' />
+              <img src={SearchIcon} alt='pp' className='h-[18px] w-[18px] mr-[7px]' />
             </div>
             <div className='pt-[2px] text-white tracking-wider font-poppins text-[17px] mt-[-5px]'>
               Search
@@ -111,7 +115,15 @@ export const StayPopup = ({ dates, day, Month, setToggle2, setToggle3 }) => {
       {categoryStay=== "Check Out" &&  <Calendar2/>}
       </div>
       <div className='absolute '>
-        {categoryStay==="Who" && <MemberSelector/>}
+        {categoryStay==="Who" && <MemberSelector
+        adult={adult}
+        setAdult={setAdult}
+        children={children}
+        setChildren={setChildren}
+        setInfants={setInfants}
+        infants={infants}
+        pets={pets}
+        setPets={setPets}/>}
       </div>
      
                                   
