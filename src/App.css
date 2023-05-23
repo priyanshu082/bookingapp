@@ -42,14 +42,7 @@
 
 
 .form {
-  margin: auto;
-  width: 1010px;
   box-shadow: 0px 8px 20px 0 rgba(130, 9, 167, 0.9), 6px 6px 10px 0px rgba(12, 2, 212, 0.645);
-  position: relative;
-  border-radius: 50px;
-  height: 580px;
-  padding: 21px;
-  z-index: 10;
 }
 
 .rightimg {
@@ -66,7 +59,6 @@
 }
 
 .btn {
-  border-radius: 0px 30px 30px 0px;
   background: linear-gradient(
     89deg,
     rgba(145, 75, 230, 0.87) 30%,

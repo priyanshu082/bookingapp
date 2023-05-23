@@ -64,7 +64,7 @@ export const Register = () => {
       <div>
         <button class="text-blue-900 mt-[25px] text-sm font-poppins ml-[44px] hover:cursor-pointer hover:underline font-medium"
         onClick={()=>{
-          Router("/loginpage")
+          Router("/")
         }}> Already have a Account? </button>
       </div>
 
