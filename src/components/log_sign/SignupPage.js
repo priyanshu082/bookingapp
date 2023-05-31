@@ -10,38 +10,46 @@ const SignupPage = () => {
     const Router =useNavigate()
 
 
-  return (
-    <div className='flex flex-row justify-center'>
-     <div>
-         <div class="pt-[110px]">
-            <div className=' form bg-white flex flex-row-reverse justify-between'>
-                <div>
-                    <Intro />
-                    <div class="mt-[50px]">
-                        <section class="flex justify-center mb-[10px] pr-[10px] text-2xl font-poppins font-medium text-blue-800">
-                            SignUp For New Account
+    return (
+        <div className='flex flex-col xl:flex-row md:pt-[100px] xxsm:pt-[20px] xl:ml-auto mb-[100px] justify-center'>
+            <div class="pt-[40px]">
+            <div className=' form bg-white flex xxsm:flex-col-reverse md:flex-row-reverse justify-around rounded-[50px] z-[10] md:h-[580px] md:p-[21px] xxsm:h-[980px] xxsm:pb-[20px] md:pb-[0px]'>
+                <div class=" md:mr-[20px] md:ml-[50px] xxsm:ml-[15%] xxsm:mr-[25%] sm:ml-[21%] ">
+                    <div class="md:mx-[5px] md:pl-[37px] xxsm:pt-[50px] md:pt-[0px] xxsm:mx-[32%] xsm:mx-[34%] sm:mx-[35%]">
+                        <Intro />
+                    </div>
+                    
+                    <div class="mt-[50px] md:mr-[20px] flex flex-col justify-center ">
+                        <section class="flex justify-center mb-[10px] pr-[0px] md:text-2xl font-poppins font-medium text-blue-800 relative xxsm:ml-[10%] xxsm:text-[20px] xsm:ml-[5%] md:ml-[0px] sm:ml-[0%]">
+                            Login to Account
                         </section>
-                        <div>
-                            <Register />
+                        <div class="xsm:ml-[10%] sm:ml-[13%]">
+                        <Register/>
                         </div>
                     </div>
+                   
                 </div>
 
-                <div>
+                <div class="">
                     <Right1 />
                 </div>
             </div>
         </div>
-    </div>
-    <div className='mt-[400px] ml-[20px] bg-purple-500 mb-[230px] pt-[11px] pb-[0px] text-white rounded-[50px] hover:text-purple-600 hover:bg-white hover:scale-105 hover:shadow-purple-600 shadow-xl delay-100 font-poppins text-[17px] font-extrabold hover:cursor-pointer pl-[20px] pr-[10px]'
+          <div className=' flex flex-row justify-center align-middle xxsm:mt-[30px] xl:mt-[330px] xl:ml-[20px] bg-purple-500 xl:mb-[230px] pt-[12px] pb-[20px] text-white rounded-[50px] hover:text-purple-600 hover:bg-white hover:scale-105 hover:shadow-purple-600 shadow-xl delay-100 font-poppins text-[18px] font-extrabold hover:cursor-pointer pl-[20px] pr-[10px] xxsm:w-[130px] xxsm:pb-[5px] xxsm:ml-[33%] sm:ml-[39%] md:ml-[43%] lg:ml-[46%] '
           onClick={()=>{
             Router("/dashboard")
           }}>
-          HouSEE<ArrowForwardIosIcon sx={{fontSize:"35px" ,marginBottom:"4px"}}/>
+            <div class="pt-[5px]">
+               HouSEE 
+            </div>
+          
+          <div>
+            <ArrowForwardIosIcon sx={{fontSize:"35px" ,marginBottom:"4px"}}/>
           </div>
-    </div> 
-    
-  )
+          </div>
+        </div>
+        
+    )
 }
 
 export default SignupPage
