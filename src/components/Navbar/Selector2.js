@@ -1,5 +1,5 @@
 import React from 'react'
-import StayPopup from './StayPopup'
+import StayPopup from './StayPopUpFile/StayPopup'
 import { useState } from 'react'
 
 
@@ -16,7 +16,7 @@ export const DateSelector2 = ({setToggle2}) => {
   return (
     <div>
        <div class="flex flex-col z-[20]">
-                            <div class="flex flex-row space-x-8 font-poppins mt-[12px] m-auto ml-[170px]">
+                            <div class="flex flex-row space-x-8 font-poppins mt-[12px]">
                                    {NavContent.map((Nav, index) => (
                                    <div onClick={() => (setCategory(Nav.Title))}>
                                        
@@ -26,11 +26,11 @@ export const DateSelector2 = ({setToggle2}) => {
                                    </div>))}
                             </div>
 
-                           <div>
+                            <div>
                                    <StayPopup
                                    setToggle2={setToggle2}/>
                                    
-                            </div>
+                            </div> 
                             </div> 
     </div>
   )

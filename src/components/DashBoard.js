@@ -3,8 +3,8 @@ import UpperBar from './Navbar/upperBar'
 import Navbar from './Navbar/Navbar'
 import Feed from './Feed'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
-import Calendars from './Navbar/Calendar'
-import Calendar2 from './Navbar/Calendar2'
+import Calendars from './Navbar/StayPopUpFile/Calendar'
+import Calendar2 from './Navbar/StayPopUpFile/Calendar2'
 
 
 export const DashBoard = () => {

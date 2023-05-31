@@ -18,8 +18,8 @@ export const Navbar = ({ setShowLogInPage }) => {
 
 
        return (
-              <div class="">
-                     <div class="flex flex-row justify-between pt-[20px] bg-white text-align border-b-[1px]  pb-[18px]">
+              <div>
+                     <div class="flex flex-row pt-[20px] justify-between bg-white text-align border-b-[1px] pb-[18px]">
                             <Link href='/dashboard' underline='none'>
                                    <div class="flex flex-row md:ml-[75px] sm:ml-[20px] ">
                                           <div class=" h-10 w-10 pt-[4px]"><img src={logo} alt='logo' /></div>
@@ -28,11 +28,11 @@ export const Navbar = ({ setShowLogInPage }) => {
                             </Link>
 
                             <button onClick={() => { setToggle2((prev) => !prev) }}>
-                                   {!toggle2 && <DateSelector1 />}
+                                   {!toggle2 && <DateSelector1/>}
                             </button>
 
                             {toggle2 && <DateSelector2
-                                   setToggle2={setToggle2} />}
+                                   setToggle2={setToggle2}/>}
 
 
                             <div class="flex flex-row">

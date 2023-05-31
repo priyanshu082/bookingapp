@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import SearchIcon from "./images/SearchIcon.svg"
+import SearchIcon from "../images/SearchIcon.svg"
 import Calendar2 from './Calendar2'
 import Calendars from './Calendar'
 import MemberSelector from './MemberSelector'
@@ -118,7 +118,7 @@ export const StayPopup = ({ setToggle2 }) => {
 
   return (
     <div>
-      <div className="flex flex-row w-[750px] mt-[30px] border-[1px] border-gray-300 bg-black bg-opacity-5 rounded-s-[80px] rounded-e-[80px] font-poppins text-[13px] font-extrabold mr-[45px]">
+      <div className="flex flex-row  mt-[30px] border-[1px] border-gray-300 bg-black bg-opacity-5 rounded-s-[80px] rounded-e-[80px] font-poppins text-[13px] font-extrabold mr-[0px]">
 
 
 
